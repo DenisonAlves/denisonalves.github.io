@@ -1,0 +1,142 @@
+.formacao {
+  background: #141414;
+}
+
+.main-formacao {
+  max-width: 1200px;
+  padding: 40px 20px 100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  box-sizing: border-box;
+}
+.formacao .subtitulo {
+  color: #fff;
+}
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #919191;
+}
+
+.formacao-header {
+  color: #a3a3a3;
+  text-transform: uppercase;
+}
+.formacao-footer {
+  color: #a3a3a3;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+.formacao-cursos {
+  color: #fff;
+}
+
+.formacao-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.formacao-cartao {
+  display: grid;
+  gap: 20px;
+  background: #080808;
+  border-radius: 4px;
+  border: #020202 solid 1px;
+  padding: 20px;
+}
+
+.formacao-cartao::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#b6f829, #67dd0a);
+  position: absolute;
+  left: -4px;
+  top: 70px;
+}
+
+.formacao-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 60px;
+  position: relative;
+}
+
+.formacao-cursos-idiomas {
+  display: grid;
+  gap: 30px;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.formacao-cursos-idiomas .formacao-cursos-img::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/cursos.svg) no-repeat center;
+  position: absolute;
+  left: -35px;
+  top: 2px;
+}
+
+.formacao-cursos-idiomas .formacao-idiomas-img::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/idiomas.svg) no-repeat center;
+  position: absolute;
+  left: -35px;
+  top: 200px;
+}
+
+.formacao-cursos-idiomas h3 {
+  color: #a3a3a3;
+  text-transform: uppercase;
+}
+
+.formacao-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.formacao-flex span {
+  color: #a3a3a3;
+}
+
+.formacao-cursos-idiomas strong {
+  color: #a3a3a3;
+  font-weight: normal;
+}
+
+@media (max-width: 800px) {
+  .main-formacao {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .formacao-grid {
+    grid-template-columns: 1fr;
+  }
+  .formacao-texto {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-formacao {
+    grid-template-columns: 1fr;
+  }
+}
